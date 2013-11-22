@@ -1,0 +1,24 @@
+Example apache enable module:
+a2enmod userdir
+
+Example node.js global install: 
+npm install -g phantomjs
+
+Initial setup:
+Lamp
+Postfix
+
+Manual install:
+Gitlab
+node.js
+npm
+
+Other apt packages:
+pwgen
+tomcat6-user
+tomcat7-user
+ffmpeg
+fontconfig (required for phantomjs)
+libapache2-mod-php5
+php5-curl
+php5-gd
