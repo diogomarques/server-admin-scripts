@@ -21,7 +21,7 @@ cp /etc/php5/apache2/php.ini /etc/php5/apache2/"php.ini-bak-"$(date +"%Y-%m-%d:%
 
 # insert new size condiguration in php.ini
 cur_size_conf=$(grep post_max_size /etc/php5/apache2/php.ini)
-new_size_conf="post_max_size = $limit"."M"
+new_size_conf="post_max_size = ${limit}M"
 sed -i "s/${cur_size_conf}/${new_size_conf}/g" /etc/php5/apache2/php.ini
 
 # restart apache
