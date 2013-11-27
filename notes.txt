@@ -1,17 +1,15 @@
-Example apache enable module:
-a2enmod userdir
+Installed packages on Ubuntu server 12.04 (bare metal, accessible-serv)
 
-Example node.js global install: 
-npm install -g phantomjs
-
-Initial setup:
+Ubuntu setup:
 Lamp
 Postfix
 
 Manual install:
+apache2 userdir (a2enmod userdir)
 Gitlab
 node.js
 npm
+phantomjs (npm install -g phantomjs)
 
 Other apt packages:
 pwgen
@@ -22,3 +20,5 @@ fontconfig (required for phantomjs)
 libapache2-mod-php5
 php5-curl
 php5-gd
+ffmpegthumbnailer
+ffmpegthumbs
