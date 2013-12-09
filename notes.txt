@@ -20,6 +20,8 @@ fontconfig (required for phantomjs)
 libapache2-mod-php5 (w/ increased post limit - see script)
 php5-curl
 php5-gd
+php5-odbc
+php5-sqlite
 ffmpegthumbnailer
 ffmpegthumbs
 awstats (see installation script)

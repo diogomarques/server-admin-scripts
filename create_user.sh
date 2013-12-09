@@ -28,7 +28,7 @@ if [ "$email" != "$email_confirm" ]; then
 fi
  
 # check MySQL admin password	
-read -s -p "MySQL admin password: " mysql_admin
+read -sp "MySQL admin password: " mysql_admin
 mysql_login_errors=$(mysql --user=root --password=$mysql_admin -e "" 2>&1 | wc -l)
 # fail if it's not correct
 if [ $mysql_login_errors -ne 0 ]; then 
