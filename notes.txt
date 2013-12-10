@@ -27,3 +27,4 @@ ffmpegthumbs
 awstats (see installation script)
 mercurial
 emacs
+openjdk-7-jre
