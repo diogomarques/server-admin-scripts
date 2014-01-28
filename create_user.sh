@@ -44,6 +44,7 @@ mysqlpasshashed=$(mysql --user=root --password=$mysql_admin -e "SELECT PASSWORD(
 # add user (public_html will be copied from /etc/skel)
 adduser --disabled-login --gecos 'User' $username
 echo $username:$userpass | chpasswd
+chmod og-r /home/$username
 # add user to mysql
 mysql --user=root --password=$mysql_admin -e "CREATE USER '$username'@'localhost' IDENTIFIED BY PASSWORD '$mysqlpasshashed';"
 mysql --user=root --password=$mysql_admin -e "CREATE DATABASE IF NOT EXISTS  $username ;"
